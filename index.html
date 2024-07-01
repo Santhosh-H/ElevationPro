@@ -22,3 +22,46 @@
     <script src="js/elevator-system.js"></script>
     <script src="js/binding.js"></script>
 </head>
+<body>
+    <div class=" head-info ">
+        <div class="building-info">
+            <p>Number of floors:<span id="floor_nums_info">10</span>&nbsp;<button class="btn btn-primary .btn-xs change_building-button"
+                                                                      id="change-floor-nums"
+                                                                      type="button">
+                                                                      Change
+            </button>&nbsp;Number of elevators:<span id="elevator_nums_info">3</span>
+                <button class="btn btn-primary .btn-xs change_building-button" id="change-elevator_nums"
+                        type="button">Change
+                </button>
+    
+            </p>
+            <div>
+                <div>Change the elevator position effective when all elevators are stationary</div>
+                <button class="btn btn-info .btn-xs change_building-button half-one-half-distribution"
+                        type="button">Half of the elevators are on the first floor and half are scattered around
+                </button>
+                <button class="btn btn-info .btn-xs change_building-button all-one"
+                        type="button">All elevators are on the first floor
+                </button>
+            </div>
+            <div>
+                <div>Smart mode: All elevators automatically analyze the system status when idle and move to floors lacking elevators</div>
+                <button class="btn btn-info .btn-xs enable-ai-mode-button"
+                        type="button">Activate smart mode
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="g-content" id="g-building">
+        <div class="g-take-place"></div>
+        <div class="g-container"></div>
+        <div class="g-take-place"></div>
+    </div>
+    <div class="take-place-panel take-place-hidden"></div>
+    <div id="g-panel-content">
+        <div class="g-take-place"></div>
+        <div id="g-panel-body"></div>
+        <div class="g-take-place"></div>
+    </div>
+    </body>
+    
